@@ -1,0 +1,72 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script>
+            var ew = 50;
+            var ow = 50;
+            var e =0;
+            var o =0;
+            function myfn() {
+                
+                var ran = Math.random() * 10;
+                ran = Math.round(ran);
+
+                span1.innerHTML = ran;
+                if (ran % 2 == 0)
+                {
+                    
+                    ew = ew +5;
+                    e++;
+                    div1.innerHTML = "Even:" + e;
+                    div1.style.width = ew  +"px";
+                }
+                else
+                {
+                    o++;
+                    ow = ow+5;
+                    div2.innerHTML = "Odd:" + o;
+                    div2.style.width = ow  +"px";
+                }
+            }
+
+        </script>
+        <style>
+            #div1{
+                width:50px;
+                height:30px;
+                margin-top:10px;
+                padding-left: 5px;
+                color:white;
+                background-color: green;
+                border-radius: 5px;
+            }
+            #div2{
+                width:50px;
+                width:50px;
+                height:30px;
+                margin-top:10px;
+                padding-left: 5px;
+                color:white;
+                background-color: blue;
+                border-radius: 5px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <button id='but1' onclick='myfn();'>Randow !</button>
+        <span id='span1'></span>
+        <br>
+        <div id='div1'>Even:</div>
+        <div id='div2'>Odd:</div>
+
+    </body>
+</html>

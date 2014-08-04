@@ -1,0 +1,4 @@
+<hr>
+<center>
+<font color=”gray”>&copy;2006 Example.com All Rights Reserved</font>
+</center>

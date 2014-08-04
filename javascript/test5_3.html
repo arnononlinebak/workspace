@@ -1,0 +1,55 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        
+        <script>
+            function myfn1(obj){
+                obj.style.backgroundColor = "lightgreen";
+                
+                if(document.getElementById("text1").value %2==0)
+                    {
+                       document.getElementById("p1").style.backgroundColor = "yellow";
+                        document.getElementById("p1").style.color = "black";
+                        document.getElementById("p1").innerHTML = "Your number is even";
+                        
+                    }
+                    else
+                        {
+                        p1.style.backgroundColor = "red";
+                        p1.style.color = "blue";
+                        p1.innerHTML = "Your number is odd";
+                        }
+            }
+            function myfn2(obj){
+                obj.style.backgroundColor = "lightgreen";
+                
+            }
+            function myfn3(obj){
+                obj.style.backgroundColor = "white";
+                
+            }
+        </script>
+        <style>
+            #p1{
+                background-color:green;
+                font-size:1.5em;
+                color:white;
+            }
+        </style>
+    
+    
+    
+    </head>
+    <body>
+        <input type="text" id="text1" onfocus="myfn2(this);" onchange="myfn1(this);" onblur="myfn3(this);">
+        <p id="p1">Your Result is Here</p>
+    </body>
+</html>

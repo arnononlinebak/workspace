@@ -1,0 +1,15 @@
+#mybox {
+	padding: 20px;
+	border: 5px solid #000000;
+	background-color: #00BFFF;
+}
+/* box model hack - see http://tantek.com/CSS/Examples/boxmodelhack.html */
+#mybox {
+	width: 250px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 200px;
+}
+html > body #mybox {
+	width: 200px;
+}

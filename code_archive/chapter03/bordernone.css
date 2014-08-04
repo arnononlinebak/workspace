@@ -1,0 +1,12 @@
+body {
+  font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 30px;
+  list-style: none;
+}
+
+img {
+  border: none;
+}

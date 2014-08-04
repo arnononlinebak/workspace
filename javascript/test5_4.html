@@ -1,0 +1,84 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+        <script>
+            function myfn1(){
+                p1.innerHTML = p1.innerHTML + but1.innerHTML;
+            }
+            function myfn2(){
+                p1.innerHTML = p1.innerHTML + but2.innerHTML;
+            }
+            function myfn3(){
+                p1.innerHTML = p1.innerHTML + but3.innerHTML;
+                
+            }
+            function myfn4(){
+                p1.style.color = but4.innerHTML;
+            }
+            function myfn5(){
+                p1.style.color = but5.innerHTML;
+            }
+            function myfn6(){
+                p1.style.color = but6.innerHTML;
+            }
+            function myfn7(){
+                p1.style.backgroundColor = but7.innerHTML;
+            }
+             function myfn8(){
+                p1.style.backgroundColor = but8.innerHTML;
+            }
+             function myfn9(){
+                p1.style.backgroundColor = but9.innerHTML;
+            }
+            function myre(){
+                p1.innerHTML = "Start:";
+                p1.style.backgroundColor = "green";
+                p1.style.color = "white";
+            }
+        </script>
+        <style>
+            #p1{
+                background-color:green;
+                font-size:1.5em;
+                color:white;
+                
+            }
+            #but10{
+                width:250px;
+                height:2em;
+                border:0;
+                border-top:10px;
+                font-size:1.5em;
+                color:white;
+                background-color:lightblue;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        symbol's
+        <button id='but1' onclick='myfn1()'>@</button>
+        <button id='but2' onclick='myfn2()'>#</button>
+        <button id='but3' onclick='myfn3()'>$</button>
+        color's
+        <button id='but4' onclick='myfn4()'>black</button>
+        <button id='but5' onclick='myfn5()'>white</button>
+        <button id='but6' onclick='myfn6()'>blue</button>
+        background color's
+        <button id='but7' onclick='myfn7()'>yellow</button>
+        <button id='but8' onclick='myfn8()'>red</button>
+        <button id='but9' onclick='myfn9()'>lightgreen</button>
+
+        <button  id ='but10' onclick='myre();'>Reset</button>
+        <p id='p1'>Start:</p>
+    </body>
+</html>

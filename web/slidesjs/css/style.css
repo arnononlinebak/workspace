@@ -1,0 +1,83 @@
+body    {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+	width:600px;
+	padding:10px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+
+/*
+	ตั้งค่าความกว้าง ความสูงของ slide
+*/
+
+.slides_container {
+	width:600px;
+        height:300px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	ปุ่ม Next/prev 
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-24px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:600px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:10px 0 0 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}

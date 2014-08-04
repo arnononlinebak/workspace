@@ -1,0 +1,3 @@
+page.alert 'Message successfully sent to seller.' 
+page.form.reset 'contact_form' 
+page.hide 'contact_seller' 

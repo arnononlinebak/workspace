@@ -1,0 +1,13 @@
+body, html {
+	font-size: 1.4em;
+}
+#navigation {
+	width: 280px;
+}
+#content {
+	margin-left: 320px;
+	margin-right: 60px;
+}
+#banner {
+	height: 60px;
+}

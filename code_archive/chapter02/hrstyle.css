@@ -1,0 +1,11 @@
+p {
+	font: 0.8em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	line-height: 2.0;
+}
+hr {
+	border: none;
+	background-color: #ADD8E6;
+	color: #ADD8E6;
+	height: 1px;
+	width: 80%;
+}

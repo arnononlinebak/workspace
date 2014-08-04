@@ -1,0 +1,27 @@
+<h1>Listing classifieds</h1>
+
+<table>
+  <tr>
+  <% for column in Classified.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for classified in @classifieds %>
+  <tr>
+  <% for column in Classified.content_columns %>
+    <td><%=h classified.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => classified %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => classified %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => classified }, :confirm => 'Are you sure?', :post => true %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @classified_pages.current.previous } if @classified_pages.current.previous %>
+<%= link_to 'Next page', { :page => @classified_pages.current.next } if @classified_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New classified', :action => 'new' %>

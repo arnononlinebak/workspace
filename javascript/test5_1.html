@@ -1,0 +1,37 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+        <script>
+            function myfn1() {
+                document.getElementById("p1").style.fontSize = "1.3em";
+            }
+            function myfn2() {
+                p1.style.fontSize = "1.5em";
+            }
+            function myfn3() {
+                p1.style.fontSize = "2em";
+            }
+        </script>
+        <style>
+            
+            #p1{
+                background-color:green;
+            }
+        </style>
+
+    </head>
+    <body>
+        <button id="but1" onclick="myfn1();">1em</button>
+        <button id="but2" onclick="myfn2();">1.5em</button>
+        <button id="but3" onclick="myfn3();">2em</button>
+        <p id="p1">My name is Harry Potter</p>
+    </body>
+</html>

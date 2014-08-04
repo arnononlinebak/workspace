@@ -1,0 +1,13 @@
+  [4;36;1mClassified Columns (0.000000)[0m   [0;1mMysql::Error: Table 'railslist2_development.classifieds' doesn't exist: SHOW FIELDS FROM classifieds[0m
+  [4;36;1mSQL (0.034675)[0m   [0;1mCREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.010965)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000400)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateClassifieds (1)
+  [4;36;1mSQL (0.041974)[0m   [0;1mCREATE TABLE classifieds (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `price` float, `location` varchar(255), `description` text, `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.037617)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000384)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001622)[0m   [0;1mSHOW FIELDS FROM classifieds[0m
+  [4;35;1mSQL (0.000293)[0m   [0mSHOW KEYS FROM classifieds[0m
+  [4;36;1mClassified Columns (0.001655)[0m   [0;1mSHOW FIELDS FROM classifieds[0m

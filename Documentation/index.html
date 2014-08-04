@@ -1,0 +1,524 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>CSS3 Mega Drop Down Menu</title>
+
+        <meta name="description" content="Thank you for purchasing my menu. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!">
+        <meta name="author" content="Keliah">
+        <meta name="copyright" content="Keliah">
+        <meta name="generator" content="Documenter v1.3 http://rxa.li/documenter">
+        <meta name="date" content="2011-05-04T00:00:00+02:00">
+
+        <link rel="stylesheet" href="css/documenter_style.css" media="all">
+
+        <script src="js/jquery.1.5.1.js"></script>
+
+        <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+        <script src="js/jquery.easing.js"></script>
+
+        <link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+        <script src="js/shCore.js"></script>
+        <script src="js/shBrushCss.js"></script>
+        <script src="js/shBrushXml.js"></script>
+        <script>SyntaxHighlighter.defaults['toolbar'] = false;
+            SyntaxHighlighter.all();</script>
+
+        <script>document.createElement('section');
+            var duration = 500, easing = 'swing';</script>
+        <script src="js/script.js"></script>
+
+        <style>
+            html{background-color:#FFFFFF;color:#383838;}
+            ::-moz-selection{background:#444444;color:#DDDDDD;}
+            ::selection{background:#444444;color:#DDDDDD;}
+            #documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.jpg);}
+            a{color:#0000FF;}
+            hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+            #documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+            #documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+            #documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+            #documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+            #documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+            #documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+            #documenter_copyright{display:block !important;visibility:visible !important;}
+        </style>
+
+    </head>
+    <body>
+        <div id="documenter_sidebar">
+            <a href="#documenter_cover" id="documenter_logo"></a>
+            <ol id="documenter_nav">
+                <li><a class="current" href="#documenter_cover">Start</a></li>
+                <li><a href="#changelog">Changelog</a></li>
+                <li><a href="#menu_variants">Menu Variants</a></li>
+                <li><a href="#html_structure">HTML Structure</a></li>
+                <li><a href="#css_files_and_structure">CSS Files and Structure</a></li>
+                <li><a href="#internet_explorer">Internet Explorer</a></li>
+                <li><a href="#additional_information">Additional Information</a></li>
+                <li><a href="#sources_and_credits">Sources and Credits</a></li>
+
+            </ol>
+            <div id="documenter_copyright">Copyright Keliah 2011<br>
+                made with the <a href="http://rxa.li/documenter">Documenter v1.3</a> 
+            </div>
+        </div>
+        <div id="documenter_content">
+            <section id="documenter_cover"><h1>Hello My friend.</h1><hr><ul><li>Created: 09/22/2010</li><li>latest Update: 05/04/2011</li><li>By: Keliah</li><li><a href=""></a></li></ul><p>Thank you for purchasing my menu. If you have any questions that are beyond the scope of this help file, please feel free to email via my <a href="http://codecanyon.net/user/Keliah">user page contact form here</a>. Thanks so much!</p></section><section id="changelog">
+                <h3>Changelog</h3><hr class="notop">
+                <h5>
+                    05/04/2011 - Version 3.0</h5>
+                <ul>
+                    <li>
+                        Recoded large parts of the main CSS</li>
+                    <li>
+                        Changed the organization of the files</li>
+                    <li>
+                        Made a few minor adjustments in the HTML</li>
+                    <li>
+                        Grouped all color variants in the CSS</li>
+                    <li>
+                        Removed the reset which used to lead to confusion</li>
+                    <li>
+                        Added a IE-specific CSS stylesheet (for gradients and very minor fixes)</li>
+                    <li>
+                        Added navigation bar gradients for IE 6-8</li>
+                    <li>
+                        Completely changed the way to handle the full width drop down variant (no more negative margins)</li>
+                    <li>
+                        Added a &quot;right aligned&quot; vertical variant</li>
+                    <li>
+                        Made a few design improvements, especially with the dark theme</li>
+                    <li>
+                        Combining the &quot;columns&quot; or the &quot;full width&quot; variants is much more easier</li>
+                    <li>
+                        HTML files from each folder are interchangeable, only the CSS (and a few images) differ from a folder to another</li>
+                </ul>
+                <h5>
+                    03/15/2011 - Version 2.2</h5>
+                <ul>
+                    <li>
+                        Added a dark variant for the drop downs</li>
+                    <li>
+                        Made a few minor adjustments in the CSS</li>
+                    <li>
+                        Added a seperate HTML file for the dark drop down</li>
+                </ul>
+                <h5>
+                    11/30/2010 - Version 2.1</h5>
+                <ul>
+                    <li>
+                        Fixed a bug in certain versions of IE8 (lists disappearing on hover) by adding a background color for &quot;.menu li ul li:hover&quot;.</li>
+                    <li>
+                        Added a 2-Levels drop down for lists</li>
+                    <li>
+                        Added a vertical variant of the Mega Menu (Black version only)</li>
+                </ul>
+                <h5>
+                    20/10/2010 - Version 2.0</h5>
+                <ul>
+                    <li>
+                        Added a Full Width drop down variant</li>
+                </ul>
+                <h5>
+                    14/10/2010 - Version 1.2</h5>
+                <ul>
+                    <li>
+                        More specific CSS classes, so they don&#39;t overwrite your existing stylings</li>
+                    <li>
+                        Moved the reset in a separate CSS file</li>
+                </ul>
+                <h5>
+                    29/09/2010 - Version 1.1</h5>
+                <ul>
+                    <li>
+                        Removed some unnecessary CSS code, the right alignment is now easier to do.</li>
+                </ul>
+            </section>
+            <section id="menu_variants">
+                <h3>Menu Variants</h3><hr class="notop">
+                <p>
+                    In the package you&#39;ll find 3 folder and since the previous versions, all files have been reorganized to make it easier to use. Just keep in mind that from a folder to another, the HTML files are exactly the same and it&#39;s all controlled by the CSS which of course differ for each version. The 3 versions are :</p>
+                <ul>
+                    <li>
+                        Horizontal</li>
+                    <li>
+                        Vertical (to be placed in a left sidebar for example)</li>
+                    <li>
+                        Vertical Left (the menu sticks to the right edge and the drop downs appear on the left)</li>
+                </ul>
+                <p>
+                    Then in each folder, you&#39;ll find 2 subfolders corresponding to the light and dark themes : those themes correspond to the color scheme of the drop downs.</p>
+                <p>
+                    Within each subfolder (and the structure is the same for the 3 variants described above), you&#39;ll find 19 HTML files with :</p>
+                <ul>
+                    <li>
+                        The &quot;columns&quot; layout : the drop downs have a limited width</li>
+                    <li>
+                        The &quot;full width&quot; layout : the drop downs take the whole width</li>
+                    <li>
+                        And an &quot;empty&quot; menu file so you can start with less code</li>
+                </ul>
+                <p>
+                    There are 9 colors :</p>
+                <ul>
+                    <li>
+                        Black</li>
+                    <li>
+                        Blue</li>
+                    <li>
+                        Brown</li>
+                    <li>
+                        Green</li>
+                    <li>
+                        Light Blue</li>
+                    <li>
+                        Orange</li>
+                    <li>
+                        Pink</li>
+                    <li>
+                        Purple</li>
+                    <li>
+                        Red</li>
+                </ul>
+                <p>
+                    Again, the markup is the same for each group of HTML files : the ones starting with &quot;columns_&quot; and the other ones starting with &quot;fullwidth_&quot;.</p>
+                <p>
+                    You can of course mix the &quot;columns&quot; and &quot;full width&quot; content.</p>
+                <p>
+                    <strong>IMPORTANT</strong></p>
+                <p>
+                    <strong>This version is a major update of the menu, much code has changed, especially for the full width menu variant. It&#39;s now much more easier to use but be careful if you update from any previous version. Not only the CSS but also the HTML has a little bit changed too.</strong></p>
+            </section>
+            <section id="html_structure">
+                <h3>HTML Structure</h3><hr class="notop">
+                <p>
+                    The menu consists in an unordered list containing DIV nested within list items (like any regular drop down in a certain way).</p>
+                <p>
+                    The whole menu is wrapped in a container which is necessary, so the structure looks like :</p>
+                <pre class="brush: html">
+&lt;div id=&quot;wrapper_menu&quot;&gt;
+
+    &lt;ul class=&quot;menu menu_black&quot;&gt;
+
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+
+                </pre>
+                <p>
+                    The UL must have first the &quot;menu&quot; class and then the color variant class (black in this case, there are 8 other colors).</p>
+                <p>
+                    Let&#39;s go a little bit further and add the structure :</p>
+                <pre class="brush: html">
+&lt;div id=&quot;wrapper_menu&quot;&gt;
+
+    &lt;ul class=&quot;menu menu_black&quot;&gt;
+
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+        FIRST DROP DOWN
+        &lt;/li&gt;
+
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 2&lt;/a&gt;
+        SECOND DROP DOWN
+        &lt;/li&gt;
+
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 3&lt;/a&gt;
+        THIRD DROP DOWN
+        &lt;/li&gt;
+
+        &lt;li class=&quot;nodrop&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+                </pre>
+                <p>
+                    As you can see, it&#39;s a regular list of items, the &quot;drop&quot; class shows an arrow and is not necessary. The Item 4 is the markup for an item which doesn&#39;t have any drop down.</p>
+                <p>
+                    Let&#39;s see now how to add content in the first drop down, we&#39;ll start with :</p>
+                <pre class="brush: html">
+&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+FIRST DROP DOWN
+&lt;/li&gt;
+                </pre>
+                <p>
+                    We&#39;ll see now how to work with columns and the full width variant.</p>
+                <h4>
+                    SETTING THE CONTAINERS</h4>
+                <h5>
+                    COLUMNS VARIANT</h5>
+                <p>
+                    There are 5 containers available :</p>
+                <pre class="brush: html">
+&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_5columns&quot;&gt;
+        765 PX CONTENT (Up to 5 columns)
+    &lt;/div&gt;
+
+&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_4columns&quot;&gt;
+        610 PX CONTENT (Up to 4 columns)
+    &lt;/div&gt;
+
+&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_3columns&quot;&gt;
+        455 PX CONTENT (Up to 3 columns)
+    &lt;/div&gt;
+
+&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_2columns&quot;&gt;
+        300 PX CONTENT (Up to 2 columns)
+    &lt;/div&gt;
+
+&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_1column&quot;&gt;
+        145 PX CONTENT (1 column)
+    &lt;/div&gt;
+
+&lt;/li&gt;
+                </pre>
+                <h5>
+                    FULL WIDTH VARIANT</h5>
+                <p>
+                    The markup is a little bit different, the parent LI item must have the &quot;fullwidth&quot; class in order to display the drop down correctly :</p>
+                <pre class="brush: html">
+&lt;li class=&quot;fullwidth&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_fullwidth&quot;&gt;
+        920 PX CONTENT
+    &lt;/div&gt;
+
+&lt;/li&gt;
+                </pre>
+                <p>
+                    And if you use the full width variant for the first menu item, there&#39;s an additional class &quot;first_fullwidth&quot; fixing rounded corners :</p>
+                <pre class="brush: html">
+&lt;li class=&quot;fullwidth&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;Item 1&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_fullwidth first_fullwidth&quot;&gt;
+        920 PX CONTENT
+    &lt;/div&gt;
+
+&lt;/li&gt;
+                </pre>
+                <h5>
+                    THE RIGHT ALIGNED MENU ITEM</h5>
+                <p>
+                    In all HTML examples, you&#39;ll find that the last menu item sticks to the right edge of the menu, there are some additional classes required for this specific item (there also could be several right aligned items).</p>
+                <p>
+                    For the &quot;columns&quot; variant :</p>
+                <pre class="brush: html">
+&lt;li class=&quot;right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;RIGHT ITEM&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_1column align_right&quot;&gt;
+
+    &lt;/div&gt;
+
+&lt;/li&gt;
+                </pre>
+                <p>
+                    And the &quot;full width&quot; variant :</p>
+                <pre class="brush: html">
+&lt;li class=&quot;right fullwidth&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;drop&quot;&gt;RIGHT ITEM&lt;/a&gt;
+
+    &lt;div class=&quot;dropdown_fullwidth align_right&quot;&gt;
+
+    &lt;/div&gt;
+
+&lt;/li&gt;
+                </pre>
+                <p>
+                    First the LI parent element must have the &quot;right&quot; class and then the container DIV the &quot;align_right&quot; class.</p>
+                <p>
+                    Now that we have seen all available containers, the content itself can be organized into columns. The different HTML pages come with a lot of examples showing all the possibilities.</p>
+                <h4>
+                    ORGANIZING THE CONTENT INTO COLUMNS</h4>
+                <p>
+                    Within each type of container, all your content can be organized easily into columns (up to 6) but make sure that the parent container is adapted to the sizes you want to use. Here are the possibilities :</p>
+                <pre class="brush: html">
+&lt;div class=&quot;col_6&quot;&gt;
+920 PX CONTENT
+&lt;/div&gt;
+
+&lt;div class=&quot;col_5&quot;&gt;
+765 PX CONTENT
+&lt;/div&gt;
+
+&lt;div class=&quot;col_4&quot;&gt;
+610 PX CONTENT
+&lt;/div&gt;
+
+&lt;div class=&quot;col_3&quot;&gt;
+455 PX CONTENT
+&lt;/div&gt;
+
+&lt;div class=&quot;col_2&quot;&gt;
+300 PX CONTENT
+&lt;/div&gt;
+
+&lt;div class=&quot;col_1&quot;&gt;
+145 PX CONTENT
+&lt;/div&gt;
+                </pre>
+                <p>
+                    Each time you have a column that sticks to the left edge of the parent container, you must use the &quot;firstcolumn&quot; class in order to remove the left margin spacing the columns :</p>
+                <pre class="brush: html">
+&lt;div class=&quot;col_6 firstcolumn&quot;&gt;
+920 PX CONTENT
+&lt;/div&gt;
+                </pre>
+                <p>&nbsp;
+                </p>
+            </section>
+            <section id="css_files_and_structure">
+                <h3>CSS Files and Structure</h3><hr class="notop">
+                <p>
+                    In each variant or subfolder, there&#39;s only 1 CSS file which differ according to the layout variant (horizontal, vertical) and the color theme (light or dark) : <strong>megamenu.css</strong> is the only necessary file and follows the same structure for each variant :</p>
+                <pre class="brush: css">
+01 MENU BAR
+02 DROP DOWN MENU
+03 CONTENT STYLING
+04 CONTACT FORM
+05 COLORS
+                </pre>
+                <p>
+                    If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+                <p>
+                    The &quot;Menu Bar&quot; section contains the styling necessary for the menu container and the menu items.</p>
+                <p>
+                    The &quot;Drop Down Menu&quot; part defines all drop down containers as well as the columns used to organize the content.</p>
+                <p>
+                    The &quot;Content Styling&quot; styles all the HTML elements within the drop downs such as : paragraphs, headings, list items, images, etc.</p>
+                <p>
+                    The &quot;Contact Form&quot; section is used to style the form elements only.</p>
+                <p>
+                    And the &quot;Colors&quot; section contains all colored elements : the navigation bar gradient, and the links within the drop downs.</p>
+                <p>
+                    To switch from a color to another, it&#39;s now much easier than in the previous versions of this menu, simply open the HTML and change the class of the UL container at the top :</p>
+                <pre class="brush: html">
+&lt;div id=&quot;wrapper_menu&quot;&gt;
+
+    &lt;ul class=&quot;menu menu_black&quot;&gt;
+
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+                </pre>
+                <p>
+                    In the above code, we have the black variant enabled thanks to the class &quot;menu_black&quot;, there are other options available :</p>
+                <ul>
+                    <li>
+                        menu_black</li>
+                    <li>
+                        menu_blue</li>
+                    <li>
+                        menu_brown</li>
+                    <li>
+                        menu_green</li>
+                    <li>
+                        menu_lightblue</li>
+                    <li>
+                        menu_orange</li>
+                    <li>
+                        menu_pink</li>
+                    <li>
+                        menu_purple</li>
+                    <li>
+                        menu_red</li>
+                </ul>
+                <p>
+                    As the colors are grouped at the end of the CSS, you can easily modify or create your own color scheme by customizing the elements there. It&#39;s also overwriting any previous styling for the concerned elements.</p>
+            </section>
+            <section id="internet_explorer">
+                <h3>Internet Explorer</h3><hr class="notop">
+                <p>
+                    This menu has been tested and optimized for Internet Explorer (from the version 6). You&#39;ll find all the necessary files in the &quot;ie&quot; subfolder.</p>
+                <p>
+                    First there is the <strong>csshover3.htc </strong>which enables the &quot;hover&quot; function on non-anchor elements for Internet Explorer 6. If you remove it, the menu won&#39;t work at all under IE6.</p>
+                <p>
+                    There are 2 CSS files :</p>
+                <ul>
+                    <li>
+                        ie.css which fixes a few minor bugs and enables some gradients for IE6, 7 and 8</li>
+                    <li>
+                        ie6.css which fixes IE6-specific bugs</li>
+                </ul>
+                <p>
+                    And a few images used by IE6 only (because this browser doesn&#39;t support PNG transparency).</p>
+            </section>
+            <section id="additional_information">
+                <h3>Additional Information</h3><hr class="notop">
+                <p>
+                    This menu has been tested in all the following browsers, the only major difference is the rendering of CSS3 effects such as rounded corners or gradients. There are some fixes available on the web to enable CSS3 on older browsers but after a lot of testing, I found out that many of these scripts break the menu.</p>
+                <p>
+                    The browsers tested are :</p>
+                <ul>
+                    <li>
+                        Internet Explorer versions 6, 7, 8 and 9</li>
+                    <li>
+                        Firefox versions 2, 3, 3.5 and 4</li>
+                    <li>
+                        Chrome from the version 4 to the version 11</li>
+                    <li>
+                        Safari 4 and 5</li>
+                    <li>
+                        Opera 10 and 11</li>
+                </ul>
+                <p>
+                    If you have a problem and want to contact me, please make sure that :</p>
+                <ul>
+                    <li>
+                        Your code is not full of errors, you can test it <a href="http://validator.w3.org/">here</a></li>
+                    <li>
+                        You had a look to the <a href="http://codecanyon.net/item/css3-mega-drop-down-menu/faq/126387">FAQ</a></li>
+                    <li>
+                        You included all the necessary files, checked the path</li>
+                </ul>
+                <p>
+                    Support can take up to 48 hours (except during holidays, it can be more during those periods), and I usually need to see the problem so don&#39;t hesitate to send me a link with a description of your problem.</p>
+                <p>
+                    Thanks for reading :)</p>
+            </section>
+            <section id="sources_and_credits">
+                <h3>Sources and Credits</h3><hr class="notop">
+                <p>
+                    I&#39;ve used the following images, icons or other files as listed.</p>
+                <ul>
+                    <li>
+                        <a href="http://960.gs/">960 Grid System</a></li>
+                    <li>
+                        <a href="http://kyo-tux.deviantart.com/art/GiNUX-126818033">GiNUX Icon Set</a></li>
+                    <li>
+                        <a href="http://www.smashingmagazine.com/2010/04/15/the-ultimate-free-web-designer-s-icon-set-750-icons-incl-psd-sources/">The Ultimate Free Web Designer&rsquo;s Icon Set (750 icons, incl. PSD sources)</a></li>
+                    <li>
+                        <a href="http://www.profimagazin.cz/ikony/socialni-ikony-vcetne-ceskych-linkovacich-sluzeb-ke-stazeni-zdarma">Social Icons</a></li>
+                </ul>
+                <hr>
+                <p>
+                    Once again, thank you so much for purchasing this theme. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the items on Codecanyon, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
+                <p>
+                    <strong>Keliah</strong></p>
+            </section>
+
+        </div>
+    </body>
+</html>
