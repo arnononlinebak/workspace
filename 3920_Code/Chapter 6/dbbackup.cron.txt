@@ -1,2 +1,0 @@
-# Cacti Backup Schedule
-0 2 * * * root /bin/bash /backup/backupCacti.sh > /dev/null 2>&1
